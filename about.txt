@@ -1,0 +1,43 @@
+Hypothetical case study
+
+NextDrive Motors is establishing a nationwide manufacturing and distribution network in India to assemble and deliver its new cruiser bikes. The supply chain operates across four distinct echelons:
+Suppliers: Sourcing heavy chassis stampings, body panels, and structural metal components from specialised industrial regions (Jamnagar, Bhilai, and Bellary).
+Manufacturing Plants (MPs): Evaluating candidate assembly locations (Sanand, Sriperumbudur, and Pune) for licensing and commissioning.
+Distribution Centres (DCs): Evaluating regional vehicle distribution hubs (Nagpur, Bhiwandi, Greater Noida, Hosur, and Dankuni) to lease and operate.
+Regional Demand Zones: Fulfilling forecasted dealer demand across six major metropolitan consumption clusters (Delhi, Mumbai, Bengaluru, Chennai, Hyderabad, and Kolkata).
+Management wants to determine which assembly plants and distribution centres to open, and how to route products from suppliers to dealers to minimise total cost while satisfying all demand.
+
+To support this analysis, input data is provided in the previously shared Excel file. Below is the formulation structure for the mathematical model to be implemented.
+
+1. Parameters (Input Data)
+
+* Capacity of each supplier
+* Capacity of each manufacturing plant (MP)
+* Product-handling capacity of each DC
+* Fixed cost of opening each plant
+* Fixed cost of opening each DC
+* Demand at each customer zone
+* Per-unit transportation cost matrices
+
+2. Decision Variables
+
+* Plant opening decisions (binary)
+* DC opening decisions (binary)
+* Supplier-to-plant shipment quantities
+* Plant-to-DC shipment quantities
+* DC-to-customer shipment quantities
+
+3. Objective Function
+Minimise total supply chain cost, defined as the sum of fixed facility-opening costs and variable transportation costs.
+
+4. Constraints
+
+* Customer demand satisfaction
+* Supplier capacity limits
+* Plant capacity limits and facility activation
+* DC throughput limits and facility activation
+* Flow conservation across echelons
+* Non-negativity constraints (for flow variables)
+* Binary constraints (for facility-opening variables)
+
+You may use any solver or modelling tool, such as Python optimisation libraries (PuLP or gurobipy), IBM CPLEX, Microsoft Excel Solver, or GAMS, to find the optimal solution. Please provide the operational interpretation of the results, along with relevant screenshots, model files, and a short summary report.
