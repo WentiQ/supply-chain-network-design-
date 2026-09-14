@@ -76,7 +76,7 @@ The supply chain operates across four distinct echelons:
 ├── Facility location techniques - input data.xlsx   # Fully populated & formulated workbook (Excel Solver ready)
 ├── solve_assignment.py                              # Standalone Python optimization solver (PuLP/CBC) & visualizer
 ├── populate_excel.py                                # Script automating openpyxl formula injection across sheets
-├── Assignment_1_Comprehensive_Report.md             # Complete executive report with mathematical proofs & tables
+├── Executive_Summary_Report.md                      # Complete executive report with mathematical proofs & tables
 ├── fig1_scnd_network_flows.png                      # High-res 4-echelon network flow diagram
 ├── fig2_scnd_cost_breakdown.png                     # Fixed vs variable cost Pareto analysis
 ├── fig3_scnd_capacity_utilization.png               # Facility capacity vs utilized throughput chart
